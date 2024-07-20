@@ -1,10 +1,13 @@
-import React from 'react'
+import About from '../About/About'
+import Landing from '../Landing/Landing'
+import './home.css'
 
 function Home() {
     return (
-        <section id='home'>
-            <h1>Home</h1>
-        </section>
+        <>
+            <Landing />
+            <About />
+        </>
     )
 }
 

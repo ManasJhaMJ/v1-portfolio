@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+    --font-one: "Space Grotesk", sans-serif;
+    --font-two: "JetBrains Mono", monospace;
+    --font-three: "Handjet", sans-serif;
+    --bezier-one: cubic-bezier(.25, .46, .45, .94);
+
+    --text-primary: #B98AF3;
+    --text-secondary: #ffffff;
+    --text-tertiary: #7d60a0;
+    --bg-color: #262626;
+    --text-back-one: #202020;
+    --accent-opacity: #dba8952a;
+    --accent: #ffffff;
+    --elevation-two: #211c1c75;
+    --elevation-three: #1e1a1a;
+    --elevation-four: #7b73733a;
+    --elevation-five: rgba(31, 28, 28, .792);
+    --elevation-six: #141313bb;
+}
+
+#about {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-one);
+    position: relative;
+}
+
+.exclaim {
+    position: absolute;
+    top: 0%;
+    right: 0rem;
+    width: 200px;
+    height: 200px;
+    z-index: -5;
+}
+
+.skills {
+    background: var(--text-back-one);
+    margin: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 18%;
+}
+
+.skill img {
+    width: 40px;
+    height: 40px;
+}
+
+.about {
+    width: 100%;
+    color: var(--text-secondary);
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: 0rem;
+    line-height: 1.75rem;
+    margin: 0 1rem;
+}
+
+.about h1 {
+    color: var(--text-primary);
+    font-weight: 600;
+    letter-spacing: -.075em;
+    line-height: .05rem;
+    line-height: 101.6%;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.highlight {
+    font-weight: 400;
+    font-family: var(--font-two);
+    font-size: .9rem;
+    background-color: var(--text-back-one);
+    border-radius: 7px;
+    color: var(--accent);
+    padding: .2rem .5rem;
+    width: fit-content;
+}
