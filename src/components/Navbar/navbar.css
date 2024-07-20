@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+    --font-one: "Space Grotesk", sans-serif;
+    --font-two: "JetBrains Mono", monospace;
+    --font-three: "Handjet", sans-serif;
+
+    --text-primary: #B98AF3;
+    --text-secondary: #ffffff;
+    --text-tertiary: #7d60a0;
+    --bg-color: #262626;
+    --text-back-one: #202020;
+    --accent-opacity: #dba8952a;
+    --accent: #ffffff;
+    --elevation-two: #211c1c75;
+    --elevation-three: #1e1a1a;
+    --elevation-four: #7b73733a;
+    --elevation-five: rgba(31, 28, 28, .792);
+    --elevation-six: #141313bb;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-two);
+}
+
+.navbar {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    padding: 1.25rem 0;
+    z-index: 15;
+    background-color: var(--bg-color);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    background-blend-mode: overlay;
+    transition: all .5s ease;
+}
+
+.colorChange {
+    border-bottom: 1.5px solid var(--accent-opacity);
+    padding: .5rem 0;
+    margin-top: .5rem;
+    width: fit-content;
+    background-color: var(--elevation-five);
+    box-shadow: 0 15px 8px -10px #0006;
+}
+
+.links {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.links a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--text-secondary);
+    background-color: transparent;
+    border: none;
+    font-size: 1.1rem;
+    -webkit-user-select: none;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    padding: 13px 25px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color .3s var(--bezier-one), transform .3s var(--bezier-one);
+}
+
+@media (min-width: 868px) {
+    .colorChange {
+        width: fit-content;
+        border-radius: 12px;
+    }
+}

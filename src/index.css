@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+  --font-one: "Space Grotesk", sans-serif;
+  --font-two: "JetBrains Mono", monospace;
+  --font-three: "Handjet", sans-serif;
+
+  --text-primary: #B98AF3;
+  --text-secondary: #ffffff;
+  --text-tertiary: #7d60a0;
+  --bg-color: #262626;
+  --text-back-one: #202020;
+  /* --accent-opacity: #dba8952a;
+    --accent: #ffffff;
+  --elevation-two: #211c1c75;
+  --elevation-three: #1e1a1a;
+  --elevation-four: #7b73733a;
+  --elevation-five: rgba(31, 28, 28, .792);
+  --elevation-six: #141313bb; */
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+#home {
+  height: 120vh;
+}
