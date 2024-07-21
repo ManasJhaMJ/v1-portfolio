@@ -94,3 +94,28 @@
     padding: .2rem .5rem;
     width: fit-content;
 }
+
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column-reverse;
+    }
+
+    .exclaim {
+        display: none;
+    }
+
+    .skills {
+        margin: 1rem 0;
+        padding: 1rem 0.7rem;
+        width: 95%;
+    }
+
+    .skill {
+        flex-basis: 30%;
+    }
+
+    .about {
+        margin: 1rem 0;
+        text-align: center;
+    }
+}
