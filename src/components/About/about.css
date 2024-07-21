@@ -26,6 +26,7 @@
     justify-content: space-between;
     align-items: center;
     font-family: var(--font-one);
+    gap: 3rem;
     position: relative;
 }
 
@@ -42,8 +43,8 @@
 
 .skills {
     background: var(--text-back-one);
-    margin: 1rem;
-    padding: 2rem;
+    margin-right: 1.5rem;
+    padding: 2rem 0.7rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -73,7 +74,8 @@
     font-size: 1.2rem;
     letter-spacing: 0rem;
     line-height: 1.75rem;
-    margin: 0 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
 }
 
 .about h1 {
@@ -108,7 +110,7 @@
 
     .skills {
         margin: 1rem 0;
-        padding: 1rem 0.7rem;
+        padding: 1.3rem 0.7rem;
         width: 95%;
     }
 

@@ -21,7 +21,7 @@
 }
 
 #home {
-    margin-top: 6rem;
+    margin-top: 7rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,6 +130,7 @@
     z-index: 1;
     animation: float 6s ease-in-out infinite;
     animation-play-state: running;
+    margin: 1.5rem;
 }
 
 .home-image img {

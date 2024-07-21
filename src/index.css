@@ -44,7 +44,7 @@ a {
 .wrapper {
   min-height: 0vw;
   margin-inline: auto;
-  width: min(90%, 62rem) !important;
+  width: min(90%, 70rem) !important;
 }
 
 /* Scrollbar Styles */

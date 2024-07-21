@@ -1,3 +1,5 @@
+import { useEffect, useRef } from 'react'
+
 import discord from '../../assets/socials/discord.png'
 import email from '../../assets/socials/email.png'
 import github from '../../assets/socials/github.png'
@@ -7,14 +9,35 @@ import twitter from '../../assets/socials/twitter.png'
 import homeimg from '../../assets/misc/home-image.png'
 import slash from '../../assets/bg-elements/slash.svg'
 
+import VanillaTilt from 'vanilla-tilt';
+
+function Tilt(props) {
+    const { options, ...rest } = props;
+    const tilt = useRef(null);
+
+    useEffect(() => {
+        VanillaTilt.init(tilt.current, options);
+    }, [options]);
+
+    return <div ref={tilt} {...rest} />;
+}
+
 function Landing() {
+
+    const options = {
+        scale: 1.05,
+        speed: 500,
+        max: 10,
+        perspective: 2000,
+    };
+
     return (
         <section id='home' className='wrapper'>
             <div className="home-text">
                 <img className='slash' src={slash} alt="slash" />
                 <h1>Manas Jha</h1>
                 <h3>or simply, MJ10</h3>
-                <p>Full Stack Developer working on freelance projects</p>
+                <p>Full Stack Developer <br />Working on freelance projects</p>
                 <div className="home-socials">
                     <a href="https://discord.com/users/916896085212033024" target="_blank" rel="noopener noreferrer"><img src={discord} alt="" /></a>
                     <a href="mailto:jhamanas939@gmail.com" target="_blank" rel="noopener noreferrer"><img src={email} alt="" /></a>
@@ -36,7 +59,9 @@ function Landing() {
                 </div>
             </div>
             <div className="home-image">
-                <img src={homeimg} alt="" />
+                <Tilt className="box" options={options} >
+                    <img src={homeimg} alt="" />
+                </Tilt>
             </div>
 
         </section>
