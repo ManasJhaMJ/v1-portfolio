@@ -1,0 +1,13 @@
+#footer {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    #footer {
+        flex-direction: column;
+    }
+}

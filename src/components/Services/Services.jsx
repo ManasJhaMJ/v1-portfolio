@@ -4,9 +4,12 @@ import two from '../../assets/misc/2.svg'
 import three from '../../assets/misc/3.svg'
 import tick from '../../assets/misc/tick.svg'
 
+import and from '../../assets/bg-elements/and.svg'
+
 function Services() {
     return (
         <section id='services'>
+            <img className='and' src={and} alt="bg element" />
             <h1>Hire•Me</h1>
             <div className="services">
                 <div className="service">

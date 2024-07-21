@@ -35,6 +35,8 @@
     width: 200px;
     height: 200px;
     z-index: -5;
+    animation: float 6s ease-in-out infinite;
+    animation-play-state: running;
 }
 
 .home-text {
@@ -158,7 +160,9 @@
     }
 
     .slash {
-        display: none;
+        top: -10%;
+        right: 0;
+        left: unset;
     }
 
     .home-text h1 {

@@ -16,19 +16,19 @@ function Landing() {
                 <h3>or simply, MJ10</h3>
                 <p>Full Stack Developer working on freelance projects</p>
                 <div className="home-socials">
-                    <a href=""><img src={discord} alt="" /></a>
-                    <a href=""><img src={email} alt="" /></a>
-                    <a href=""><img src={github} alt="" /></a>
-                    <a href=""><img src={linkedin} alt="" /></a>
-                    <a href=""><img src={twitter} alt="" /></a>
+                    <a href="https://discord.com/users/916896085212033024" target="_blank" rel="noopener noreferrer"><img src={discord} alt="" /></a>
+                    <a href="mailto:jhamanas939@gmail.com" target="_blank" rel="noopener noreferrer"><img src={email} alt="" /></a>
+                    <a href="https://github.com/ManasJhaMJ" target="_blank" rel="noopener noreferrer"><img src={github} alt="" /></a>
+                    <a href="https://www.linkedin.com/in/manasjhamj/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="" /></a>
+                    <a href="https://x.com/manasjhamj" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="" /></a>
                 </div>
                 <div className="cta-group">
-                    <a href="#work"><button>
+                    <a href="#projects"><button>
                         <div className="side">
                         </div>
                         View Work
                     </button></a>
-                    <a href="#contact"><button>
+                    <a href="https://www.linkedin.com/in/manasjhamj/" target="_blank" rel="noopener noreferrer"><button>
                         <div className="side">
                         </div>
                         Hire Me

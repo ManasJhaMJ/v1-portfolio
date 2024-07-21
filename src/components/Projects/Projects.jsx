@@ -10,6 +10,8 @@ import pixelcode from '../../assets/projects/pixelcode.png'
 import photography from '../../assets/projects/photography.png'
 import shashtra from '../../assets/projects/shashtra.png'
 
+import dollar from '../../assets/bg-elements/dollar.svg'
+
 import Project from './Project'
 import './projects.css'
 
@@ -63,6 +65,7 @@ function Projects() {
 
     return (
         <section id='projects'>
+            <img className='dollar' src={dollar} alt="bg element" />
             <h1>Project•Work</h1>
             <div className="project-btns">
                 <button style={getButtonStyle(1)} onClick={() => { setSet(1) }}><div className="side"></div>
