@@ -4,10 +4,10 @@ function Footer() {
     return (
         <section id='footer' className='wrapper'>
             <div>
-                <p>Completed in one night. <span className='highlight'>❤️</span></p>
+                <p>Inspired by <span className='highlight'>Authqtx</span></p>
             </div>
             <div>
-                <p>Made with <span className='highlight'>❤️</span></p>
+                <p><span className='highlight'>❤️</span></p>
             </div>
         </section>
     )
